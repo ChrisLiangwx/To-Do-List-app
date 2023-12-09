@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ToDoDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/taskTitle"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearance"
+        android:layout_weight="1"
+        android:id="@+id/taskDescription"
+
+        />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/taskStatus"-->
+<!--        android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--        android:layout_weight="1"-->
+<!--        />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Task"
+        android:id="@+id/deleteTask"
+        android:layout_gravity="bottom|end"
+        />
+
+<!--    <Switch-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Change Status"-->
+<!--        android:textOff="Complete"-->
+<!--        android:textOn="Incomplete"-->
+<!--        android:id="@+id/taskStatusSwitch"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        />-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskStatusSpinner"
+        android:layout_gravity="bottom|end"
+        android:entries="@array/task_status"
+        />
+
+</LinearLayout>
